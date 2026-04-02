@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Package manager
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Auto-generated
+next-env.d.ts
+*.tsbuildinfo
+
+# Coverage
+coverage
+
+# Misc
+.vercel
+.DS_Store
