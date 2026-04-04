@@ -3,24 +3,38 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #ff6f00;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --font-sans: var(--font-inter-tight), sans-serif;
+  --font-roboto: var(--font-roboto), sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter-tight), sans-serif;
+}
+
+@utility flex-center {
+  @apply flex flex-row items-center justify-center;
+}
+
+@utility col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility text-md {
+  @apply text-[16px];
+}
+
+@utility shadow-soft-card {
+  box-shadow:
+    0px 0.602187px 0.602187px -1.25px rgba(0, 0, 0, 0.18),
+    0px 2.28853px 2.28853px -2.5px rgba(0, 0, 0, 0.16),
+    0px 10px 10px -3.75px rgba(0, 0, 0, 0.06);
 }
