@@ -5,7 +5,6 @@ interface ActionButtonProps {
   href: string;
   label: string;
   icon?: string;
-  iconAlt?: string;
   className?: string;
 }
 
