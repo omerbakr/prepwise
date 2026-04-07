@@ -31,3 +31,12 @@ export const PAIN_POINTS = [
     text: "Do you waste hours rewriting and tweaking prompts?",
   },
 ] as const;
+
+export const TARGET_DATE = new Date("2026-08-01T00:00:00");
+
+export const PROMPT_PHRASES = [
+  "Pls help.",
+  "Teach me this PDF.",
+  "Make no mistakes.",
+  "Explain this like I’m 5.",
+] as const;
