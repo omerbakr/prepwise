@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import ActionButton from "./ActionButton";
+import ActionButton from "./ui/ActionButton";
+import SectionHeading from "./ui/SectionHeading";
 import Countdown from "./hero/Countdown";
 import PromptBox from "./hero/PromptBox";
-import SectionHeading from "./ui/SectionHeading";
-import PainPoints from "./PainPoints";
+import PainPoints from "./hero/PainPoints";
 
 const Hero = () => {
   return (

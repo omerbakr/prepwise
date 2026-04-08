@@ -4,10 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 
 import { NAV_LINKS } from "@/constants";
-import ActionButton from "@/components/ActionButton";
+import ActionButton from "@/components/ui/ActionButton";
 
-import MobileMenuButton from "./MobileMenuButton";
-import MobileMenu from "./MobileMenu";
+import MobileMenuButton from "./navbar/MobileMenuButton";
+import MobileMenu from "./navbar/MobileMenu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

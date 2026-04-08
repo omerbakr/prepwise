@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { NAV_LINKS } from "@/constants";
-import ActionButton from "@/components/ActionButton";
+import ActionButton from "@/components/ui/ActionButton";
 
 interface MobileMenuProps {
   isOpen: boolean;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Inter_Tight } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/providers/SmoothScroll";
 
 const roboto = Roboto({
