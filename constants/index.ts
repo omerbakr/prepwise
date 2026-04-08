@@ -7,28 +7,28 @@ export const NAV_LINKS = [
 
 export const PAIN_POINTS = [
   {
-    icon: "AlarmClockPlus",
-    text: 'Spending hours trying to "trick" the AI into giving you what you want.',
+    icon: "/icons/clock.svg",
+    text: "Wasting hours rereading the same pages without actually retaining anything.",
   },
   {
-    icon: "CircleHelp",
-    text: "Your AI-generated content sounds robotic and lacks strategic depth.",
+    icon: "/icons/question-mark.svg",
+    text: "Asking AI questions about your material and getting vague, unhelpful answers.",
   },
   {
-    icon: "Meh",
-    text: "Worrying that your skills are becoming obsolete in the age of AI.",
+    icon: "/icons/meh.svg",
+    text: "Feeling stuck because you don't know the right questions to ask.",
   },
   {
-    icon: "Frown",
-    text: "Do you have a growing fear of being left behind?",
+    icon: "/icons/meh.svg",
+    text: "Losing motivation when study sessions feel aimless and unproductive.",
   },
   {
-    icon: "Sparkles",
-    text: "Are you overwhelmed by the sheer number of AI tools?",
+    icon: "/icons/angry.svg",
+    text: "Getting frustrated copying text between AI tools just to make sense of a PDF.",
   },
   {
-    icon: "MonitorSmartphone",
-    text: "Do you waste hours rewriting and tweaking prompts?",
+    icon: "/icons/keyboard.svg",
+    text: "Rewriting the same prompts over and over, never getting the depth you need.",
   },
 ] as const;
 
