@@ -21,7 +21,7 @@ const ActionButton = ({
     >
       <span className="text-md ml-2 font-medium text-white">{label}</span>
       <div className="flex-center ml-4 h-9 w-9 rounded-md bg-white">
-        <Image src={icon} alt="" width={16} height={16} />
+        <Image src={icon} alt="" width={16} height={16} className="h-4 w-4" />
       </div>
     </Link>
   );

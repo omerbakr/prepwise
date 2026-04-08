@@ -1,23 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f2f1ee;
   --foreground: #171717;
   --primary: #ff6f00;
+  --gray-10: #151515;
+  --gray-20: #757575;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
-  --font-sans: var(--font-inter-tight), sans-serif;
+  --color-gray-10: var(--gray-10);
+  --color-gray-20: var(--gray-20);
   --font-roboto: var(--font-roboto), sans-serif;
+  --font-inter-tight: var(--font-inter-tight), sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter-tight), sans-serif;
+}
+
+@utility wrapper {
+  @apply mx-auto max-w-7xl p-4 md:p-8 lg:p-12;
 }
 
 @utility flex-center {
@@ -32,9 +40,27 @@ body {
   @apply text-[16px];
 }
 
+@utility glow {
+  @apply pointer-events-none absolute -z-10 rounded-full bg-white/12 blur-[77px];
+}
+
 @utility shadow-soft-card {
   box-shadow:
     0px 0.602187px 0.602187px -1.25px rgba(0, 0, 0, 0.18),
     0px 2.28853px 2.28853px -2.5px rgba(0, 0, 0, 0.16),
     0px 10px 10px -3.75px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 0.7s steps(1) infinite;
 }

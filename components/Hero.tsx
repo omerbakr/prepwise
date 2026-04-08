@@ -1,8 +1,66 @@
+import Image from "next/image";
+
+import ActionButton from "./ActionButton";
+import Countdown from "./hero/Countdown";
+import PromptBox from "./hero/PromptBox";
+import SectionHeading from "./ui/SectionHeading";
+import PainPoints from "./PainPoints";
+
 const Hero = () => {
   return (
-    <section className="relative min-h-screen">
-      <div className="absolute inset-0 -z-50 bg-[url(/images/background.avif)] bg-cover bg-center bg-no-repeat" />
-      <div className="absolute -top-72 left-1/2 -z-50 h-full min-h-64 w-full min-w-96 -translate-x-1/2 rounded-full bg-[url(/images/hero-grid.svg)] bg-center bg-no-repeat" />
+    <section className="relative min-h-screen overflow-x-hidden">
+      <Image
+        src="/images/background.avif"
+        alt=""
+        fill
+        priority
+        aria-hidden
+        className="pointer-events-none -z-50 max-h-screen w-screen"
+      />
+      <Image
+        src="/images/hero-grid.svg"
+        alt=""
+        width={1600}
+        height={1600}
+        aria-hidden
+        className="pointer-events-none absolute -top-30 left-1/2 -translate-x-1/2 max-sm:hidden"
+      />
+
+      <div className="to-background pointer-events-none absolute inset-0 h-screen bg-linear-to-b from-transparent via-transparent via-90%" />
+
+      <div className="glow top-[18%] left-[8%] h-[30%] w-[10%] -rotate-45" />
+      <div className="glow top-0 left-[32%] h-[72%] w-[12%] -rotate-30" />
+
+      <div className="glow top-0 right-[32%] h-[72%] w-[12%] rotate-30" />
+      <div className="glow top-[18%] right-[8%] h-[30%] w-[10%] rotate-45" />
+
+      <div className="wrapper mt-48 flex flex-col items-center gap-4">
+        <Countdown />
+
+        <SectionHeading
+          as="h1"
+          className="text-white"
+          text="Upload Your PDF and Learn with an AI Tutor &"
+          highlight="Like never before."
+        />
+
+        <PromptBox />
+
+        <ActionButton label="Sign in for free" href="/sign-in" />
+
+        <div className="relative my-16 h-full max-h-155 w-full max-w-300 rounded-2xl border border-white/30 p-2 shadow-2xl">
+          {/* TODO: Replace with actual app screenshot */}
+          <Image
+            src="/images/temporary.jpg"
+            alt="App dashboard preview"
+            width={1200}
+            height={600}
+            className="h-auto w-full rounded-[inherit] shadow-2xl"
+          />
+        </div>
+
+        <PainPoints />
+      </div>
     </section>
   );
 };
