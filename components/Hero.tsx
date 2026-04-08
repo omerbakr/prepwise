@@ -11,6 +11,7 @@ const Hero = () => {
         src="/images/background.avif"
         alt=""
         fill
+        priority
         className="-z-50 max-h-screen w-screen"
       />
       <Image

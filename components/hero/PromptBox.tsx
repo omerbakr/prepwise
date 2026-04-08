@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AudioLines, File, Mic, Plus, X } from "lucide-react";
 
 import { PROMPT_PHRASES } from "@/constants";
@@ -10,6 +10,10 @@ const PromptBox = () => {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [charIndex, setCharIndex] = useState(0);
+
+  const pauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  );
 
   useEffect(() => {
     const current = PROMPT_PHRASES[phraseIndex];
@@ -22,7 +26,10 @@ const PromptBox = () => {
           setCharIndex((c) => c + 1);
 
           if (charIndex + 1 === current.length) {
-            setTimeout(() => setIsDeleting(true), 1400);
+            pauseTimeoutRef.current = setTimeout(
+              () => setIsDeleting(true),
+              1400,
+            );
           }
         },
         55 + Math.random() * 40,
@@ -42,7 +49,10 @@ const PromptBox = () => {
       );
     }
 
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(timeout);
+      clearTimeout(pauseTimeoutRef.current);
+    };
   }, [charIndex, isDeleting, phraseIndex]);
 
   return (
