@@ -55,7 +55,7 @@ const Hero = () => {
             alt="App dashboard preview"
             width={1200}
             height={600}
-            className="h-full w-full rounded-[inherit] shadow-2xl"
+            className="h-auto w-full rounded-[inherit] shadow-2xl"
           />
         </div>
 
@@ -63,7 +63,7 @@ const Hero = () => {
           <p className="font-roboto text-gray-20 text-2xl">Is this you?</p>
 
           <SectionHeading
-            className="text-black"
+            className="text-black md:mb-12"
             text="Does Your Experience with AI Feel More"
             highlight="Frustrating Than Futuristic?"
           />
@@ -74,7 +74,13 @@ const Hero = () => {
                 key={id}
                 className="flex flex-col items-center gap-2 text-center"
               >
-                <Image src={icon} alt="" width={32} height={32} />
+                <Image
+                  src={icon}
+                  alt=""
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <p className="max-w-80 text-lg font-medium">{text}</p>
               </div>
             ))}
