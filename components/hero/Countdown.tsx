@@ -20,7 +20,11 @@ const Countdown = () => {
       <div className="font-roboto rounded-xs bg-black px-1 py-0.5 text-xs font-semibold text-white md:font-bold">
         Limited time offer ends in
       </div>
-      <p className="mx-auto px-0.5 text-xs tracking-wider text-black tabular-nums md:text-sm">
+      {/* TODO: Fix hydration mismatch properly */}
+      <p
+        suppressHydrationWarning
+        className="mx-auto px-0.5 text-xs tracking-wider text-black tabular-nums md:text-sm"
+      >
         {days} : {String(hours).padStart(2, "0")} :{" "}
         {String(minutes).padStart(2, "0")} : {String(seconds).padStart(2, "0")}
       </p>

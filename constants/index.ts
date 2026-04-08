@@ -32,7 +32,7 @@ export const PAIN_POINTS = [
   },
 ] as const;
 
-export const TARGET_DATE = new Date("2026-08-01T00:00:00");
+export const TARGET_DATE = new Date("2026-08-01T00:00:00Z"); // UTC
 
 export const PROMPT_PHRASES = [
   "Pls help.",
