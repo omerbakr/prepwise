@@ -15,6 +15,7 @@
   --color-gray-10: var(--gray-10);
   --color-gray-20: var(--gray-20);
   --font-roboto: var(--font-roboto), sans-serif;
+  --font-inter-tight: var(--font-inter-tight), sans-serif;
 }
 
 body {

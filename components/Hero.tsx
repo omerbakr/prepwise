@@ -13,6 +13,7 @@ const Hero = () => {
         alt=""
         fill
         priority
+        aria-hidden
         className="-z-50 max-h-screen w-screen"
       />
       <Image
@@ -20,10 +21,11 @@ const Hero = () => {
         alt=""
         width={1600}
         height={1600}
-        className="absolute -top-30 left-1/2 -translate-x-1/2"
+        aria-hidden
+        className="absolute -top-30 left-1/2 -translate-x-1/2 max-sm:hidden"
       />
 
-      <div className="absolute inset-0 h-screen bg-linear-to-b from-transparent via-transparent via-90% to-[#f2f1ee]" />
+      <div className="to-background absolute inset-0 bg-linear-to-b from-transparent via-transparent via-90%" />
 
       <div className="glow top-[18%] left-[8%] h-[30%] w-[10%] -rotate-45" />
       <div className="glow top-0 left-[32%] h-[72%] w-[12%] -rotate-30" />
@@ -34,7 +36,7 @@ const Hero = () => {
       <div className="wrapper mt-48 flex flex-col items-center gap-4">
         <Countdown />
 
-        <h1 className="font-inter-tight text-center text-2xl font-semibold text-white md:text-[45px] md:leading-12">
+        <h1 className="text-center text-2xl font-semibold text-white md:text-[48px] md:leading-12">
           Upload Your PDF and Learn <br /> with an AI Tutor &{" "}
           <span className="text-primary">Like never before.</span>
         </h1>
@@ -56,14 +58,14 @@ const Hero = () => {
 
         <div className="my-16 flex flex-col items-center gap-8 md:px-24">
           <p className="font-roboto text-gray-20 text-2xl">Is this you?</p>
-          <h2 className="font-inter-tight text-center text-2xl font-semibold text-black md:text-[48px] md:leading-12">
+          <h2 className="text-center text-xl font-semibold text-black md:text-2xl md:text-[48px] md:leading-12">
             Does Your Experience with AI Feel More{" "}
             <span className="text-primary">Frustrating Than Futuristic?</span>
           </h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {PAIN_POINTS.map(({ text, icon }) => (
+            {PAIN_POINTS.map(({ id, text, icon }) => (
               <div
-                key={text}
+                key={id}
                 className="flex flex-col items-center gap-2 text-center"
               >
                 <Image src={icon} alt="" width={32} height={32} />
