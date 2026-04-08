@@ -41,7 +41,7 @@ body {
 }
 
 @utility glow {
-  @apply absolute rounded-full bg-white/12 blur-[77px];
+  @apply pointer-events-none absolute -z-10 rounded-full bg-white/12 blur-[77px];
 }
 
 @utility shadow-soft-card {
