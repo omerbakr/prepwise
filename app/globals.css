@@ -6,6 +6,8 @@
   --primary: #ff6f00;
   --gray-10: #151515;
   --gray-20: #757575;
+  --gray-30: #202020;
+  --gray-40: #1a1a1a;
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-primary: var(--primary);
   --color-gray-10: var(--gray-10);
   --color-gray-20: var(--gray-20);
+  --color-gray-30: var(--gray-30);
+  --color-gray-40: var(--gray-40);
   --font-roboto: var(--font-roboto), sans-serif;
   --font-inter-tight: var(--font-inter-tight), sans-serif;
 }
@@ -25,7 +29,7 @@ body {
 }
 
 @utility wrapper {
-  @apply mx-auto max-w-7xl p-4 md:p-8 lg:p-12;
+  @apply mx-auto max-w-7xl;
 }
 
 @utility flex-center {
@@ -36,12 +40,20 @@ body {
   @apply flex flex-col items-center justify-center;
 }
 
-@utility text-md {
-  @apply text-[16px];
+@utility abs-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
 @utility glow {
   @apply pointer-events-none absolute -z-10 rounded-full bg-white/12 blur-[77px];
+}
+
+@utility glow-circle {
+  @apply absolute right-0 -bottom-50 translate-x-1/2 translate-y-1/2 rounded-full;
+}
+
+@utility section-subtitle {
+  @apply font-roboto text-gray-20 text-2xl;
 }
 
 @utility shadow-soft-card {
@@ -49,6 +61,12 @@ body {
     0px 0.602187px 0.602187px -1.25px rgba(0, 0, 0, 0.18),
     0px 2.28853px 2.28853px -2.5px rgba(0, 0, 0, 0.16),
     0px 10px 10px -3.75px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  section {
+    @apply p-4 md:p-8 lg:p-16;
+  }
 }
 
 @keyframes blink {
@@ -63,4 +81,23 @@ body {
 
 .animate-blink {
   animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 30s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll-x-reverse {
+  animation: scroll-x 30s linear infinite reverse;
+  width: max-content;
 }

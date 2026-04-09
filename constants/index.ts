@@ -46,3 +46,27 @@ export const PROMPT_PHRASES = [
   "Make no mistakes.",
   "Explain this like I’m 5.",
 ] as const;
+
+export const PROFILES = [
+  { role: "Medical Student", image: "/images/profile-1.avif" },
+  { role: "Law Student", image: "/images/profile-2.avif" },
+  { role: "PhD Researcher", image: "/images/GvIIYiCvs1fSYrsqT9kkYqRv4Y.avif" },
+] as const;
+
+export const KEY_FEATURES = [
+  {
+    label: "STUDY PLANNER",
+    text: "Personalized study schedules built around your deadlines, exams, and goals.",
+    icon: "/icons/calendar.svg",
+  },
+  {
+    label: "ANY SUBJECT",
+    text: "From medicine to law to engineering, master any field straight from your PDFs.",
+    icon: "/icons/case.svg",
+  },
+  {
+    label: "1:1 AI TUTORING",
+    text: "Ask questions, get clear explanations, and learn like you have a private tutor.",
+    icon: "/icons/pair.svg",
+  },
+] as const;
