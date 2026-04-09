@@ -1,6 +1,8 @@
 import { TARGET_DATE } from "@/constants";
 
-export const cn = (...classes: (string | false | undefined)[]) => {
+type ClassValue = string | false | null | undefined;
+
+export const cn = (...classes: ClassValue[]) => {
   return classes.filter(Boolean).join(" ");
 };
 

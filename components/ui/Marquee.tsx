@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import { cn } from "@/lib/utils";
+
 type MarqueeProps = {
   children: ReactNode;
   direction?: "left" | "right";
@@ -9,12 +11,15 @@ type MarqueeProps = {
 const Marquee = ({
   children,
   direction = "right",
-  className = "",
+  className,
 }: MarqueeProps) => {
   return (
-    <div className={`group overflow-hidden ${className}`}>
+    <div className={cn("group overflow-hidden", className)}>
       <div
-        className={`flex gap-2 ${direction === "left" ? "animate-scroll-x-reverse" : "animate-scroll-x"} motion-reduce:animate-none`}
+        className={cn(
+          "flex gap-2 motion-reduce:animate-none",
+          direction === "left" ? "animate-scroll-x-reverse" : "animate-scroll-x",
+        )}
       >
         {children}
 

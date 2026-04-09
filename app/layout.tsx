@@ -3,6 +3,7 @@ import { Roboto, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/providers/SmoothScroll";
+import { cn } from "@/lib/utils";
 
 const roboto = Roboto({
   weight: ["400", "500", "600", "700"],
@@ -29,7 +30,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${interTight.variable} h-full antialiased`}
+      className={cn(
+        roboto.variable,
+        interTight.variable,
+        "h-full antialiased",
+      )}
     >
       <body>
         <SmoothScroll>
