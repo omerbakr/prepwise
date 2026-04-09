@@ -14,7 +14,7 @@ const Introduction = () => {
     >
       <Image
         src={image}
-        alt={role}
+        alt=""
         width={32}
         height={32}
         className="rounded-full"
@@ -38,7 +38,7 @@ const Introduction = () => {
         <div className="bg-gray-10 grid grid-cols-1 rounded-2xl border border-white/20 text-white lg:grid-cols-2">
           <div className="bg-gray-40 relative isolate flex flex-col gap-8 overflow-hidden rounded-tl-2xl p-10 max-sm:rounded-tr-2xl md:rounded-bl-2xl md:p-16">
             <div className="flex flex-col gap-4">
-              <span className="w-fit rounded-lg border-[0.5px] border-[#333] bg-[#1a1a1a] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)]">
+              <span className="bg-gray-40 border-gray-30 w-fit rounded-lg border-[0.5px] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)]">
                 Get Ahead
               </span>
               <p className="text-xl font-semibold md:text-4xl">
@@ -46,7 +46,7 @@ const Introduction = () => {
                 learn.
               </p>
               <ActionButton
-                href="sign-in"
+                href="/sign-in"
                 label="Sign in for free"
                 className="w-fit"
               />
@@ -54,8 +54,7 @@ const Introduction = () => {
 
             <div className="flex flex-col gap-4">
               <p className="text-lg md:text-xl">
-                Trusted by students and researchers across every field of
-                study.
+                Trusted by students and researchers across every field of study.
               </p>
 
               <div className="flex flex-col gap-2 overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
