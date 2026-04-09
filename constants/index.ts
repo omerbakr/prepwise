@@ -70,3 +70,36 @@ export const KEY_FEATURES = [
     icon: "/icons/pair.svg",
   },
 ] as const;
+
+export const STATS = [
+  {
+    label: "10+ Hours Saved Weekly",
+    text: "Reclaim a full workday each week with focused, AI-guided study sessions.",
+    icon: "/icons/clock.svg",
+  },
+  {
+    label: "3x Faster Learning",
+    text: "Grasp complex concepts in a fraction of the time it takes to reread your notes.",
+    icon: "/icons/acceleration.svg",
+  },
+  {
+    label: "4.9/5 Student Rating",
+    text: "Consistently rated “Excellent” by students across every field of study.",
+    icon: "/icons/star.svg",
+  },
+  {
+    label: "50K+ PDFs Decoded",
+    text: "From textbooks to research papers, every page turned into clear, simple answers.",
+    icon: "/icons/file.svg",
+  },
+  {
+    label: "Free to Get Started",
+    text: "Sign up free, upload your first PDF, and start learning in under a minute.",
+    icon: "/icons/gift.svg",
+  },
+  {
+    label: "Any Subject, Any Level",
+    text: "From medicine to law to engineering, master any field straight from your notes.",
+    icon: "/icons/folder.svg",
+  },
+] as const;
