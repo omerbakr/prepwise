@@ -48,7 +48,7 @@ const PromptBox = () => {
   }, [charIndex, isDeleting, phraseIndex]);
 
   return (
-    <div className="bg-gray-10/95 flex h-fit w-full max-w-150 flex-col justify-between gap-4 rounded-2xl border border-white/30 p-4.5 text-white">
+    <div className="bg-gray-40/95 flex h-fit w-full max-w-150 flex-col justify-between gap-4 rounded-2xl border border-white/30 p-4.5 text-white">
       <div className="relative flex w-50 items-center gap-1 rounded-lg border border-white/30 p-1">
         <span className="bg-primary flex-center h-9 w-9 rounded-sm p-2.5">
           <File />

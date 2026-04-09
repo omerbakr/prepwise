@@ -35,10 +35,10 @@ const Introduction = () => {
           highlight="AI Teaching System"
         />
 
-        <div className="bg-gray-10 grid grid-cols-1 rounded-2xl border border-white/20 text-white lg:grid-cols-2">
-          <div className="bg-gray-40 relative isolate flex flex-col gap-8 overflow-hidden rounded-tl-2xl p-10 max-sm:rounded-tr-2xl md:rounded-bl-2xl md:p-16">
+        <div className="bg-gray-40 grid grid-cols-1 rounded-2xl border border-white/20 text-white lg:grid-cols-2">
+          <div className="bg-gray-30 relative isolate flex flex-col gap-8 overflow-hidden rounded-tl-2xl p-10 max-sm:rounded-tr-2xl md:rounded-bl-2xl md:p-16">
             <div className="flex flex-col gap-4">
-              <span className="bg-gray-40 border-gray-30 w-fit rounded-lg border-[0.5px] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)]">
+              <span className="bg-gray-30 border-gray-20 w-fit rounded-lg border-[0.5px] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)]">
                 Get Ahead
               </span>
               <p className="text-xl font-semibold md:text-4xl">
@@ -64,7 +64,7 @@ const Introduction = () => {
             </div>
 
             <div className="glow-circle -z-10 h-200 w-200 bg-black blur-lg" />
-            <div className="bg-gray-20 glow-circle -z-20 h-225 w-225 blur-xs" />
+            <div className="bg-gray-10 glow-circle -z-20 h-225 w-225 blur-xs" />
             <div className="bg-primary/40 glow-circle -z-30 h-300 w-300 blur-3xl" />
             <div className="bg-primary glow-circle -z-40 h-220 w-225 blur-2xl" />
           </div>
@@ -72,7 +72,7 @@ const Introduction = () => {
           <div className="flex flex-col justify-center gap-4 px-8 py-20 md:gap-12">
             {KEY_FEATURES.map(({ label, text, icon }) => (
               <div key={label} className="flex items-center gap-4">
-                <div className="bg-gray-30 flex-center relative aspect-square h-24 rounded-lg md:h-32">
+                <div className="bg-gray-20 flex-center relative aspect-square h-24 rounded-lg md:h-32">
                   <div className="bg-primary to-background abs-center h-12 w-12 rounded-full bg-linear-to-b opacity-80 blur-sm" />
                   <Image
                     src={icon}
@@ -83,7 +83,7 @@ const Introduction = () => {
                   />
                 </div>
                 <div className="flex h-full flex-col justify-evenly font-medium">
-                  <span className="text-md text-gray-20">{label}</span>
+                  <span className="text-md text-gray-10">{label}</span>
                   <p className="text-sm md:text-[20px]">{text}</p>
                 </div>
               </div>

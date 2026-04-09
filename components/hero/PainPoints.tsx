@@ -6,7 +6,7 @@ import { PAIN_POINTS } from "@/constants";
 const PainPoints = () => {
   return (
     <div className="my-16 flex flex-col items-center gap-8 md:px-24">
-      <p className="font-roboto text-gray-20 text-2xl">Is this you?</p>
+      <p className="section-subtitle">Is this you?</p>
 
       <SectionHeading
         className="text-black md:mb-12"

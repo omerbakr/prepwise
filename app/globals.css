@@ -4,10 +4,10 @@
   --background: #f2f1ee;
   --foreground: #171717;
   --primary: #ff6f00;
-  --gray-10: #151515;
-  --gray-20: #757575;
-  --gray-30: #202020;
-  --gray-40: #1a1a1a;
+  --gray-10: #757575;
+  --gray-20: #202020;
+  --gray-30: #1a1a1a;
+  --gray-40: #151515;
 }
 
 @theme inline {
@@ -53,7 +53,7 @@ body {
 }
 
 @utility section-subtitle {
-  @apply font-roboto text-gray-20 text-2xl;
+  @apply font-roboto text-gray-10 text-2xl;
 }
 
 @utility shadow-soft-card {
