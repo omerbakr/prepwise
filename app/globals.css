@@ -53,7 +53,7 @@ body {
 }
 
 @utility section-subtitle {
-  @apply font-roboto text-gray-10 text-2xl;
+  @apply font-roboto text-gray-10 text-xl md:text-2xl;
 }
 
 @utility shadow-soft-card {

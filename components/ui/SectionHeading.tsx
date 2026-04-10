@@ -44,7 +44,7 @@ const SectionHeading = ({
     <Tag
       ref={headingRef}
       className={cn(
-        "max-w-3xl text-center text-2xl font-semibold sm:text-4xl md:leading-12 lg:text-5xl",
+        "mb-8 text-center text-2xl font-semibold sm:text-4xl md:leading-12 lg:text-5xl",
         className,
       )}
     >

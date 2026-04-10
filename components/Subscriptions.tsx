@@ -8,12 +8,12 @@ const Subscriptions = () => {
     <section className="bg-[url(/images/dark-bg.avif)]">
       <div className="wrapper relative flex flex-col items-center gap-8 py-24">
         <BgLines className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full opacity-60" />
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-4">
           <p className="section-subtitle">Our Subscriptions</p>
           <SectionHeading
             text="Choose Your Path to"
             highlight="Mastery"
-            className="max-w-100 text-white"
+            className="max-w-md text-white"
           />
         </div>
 

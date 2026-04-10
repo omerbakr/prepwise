@@ -39,7 +39,7 @@ const Hero = () => {
 
         <SectionHeading
           as="h1"
-          className="text-white"
+          className="max-w-3xl text-white"
           text="Upload Your PDF and Learn with an AI Tutor &"
           highlight="Like never before."
         />

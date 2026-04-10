@@ -9,7 +9,7 @@ const PainPoints = () => {
       <p className="section-subtitle">Is this you?</p>
 
       <SectionHeading
-        className="text-black md:mb-12"
+        className="max-w-3xl text-black"
         text="Does Your Experience with AI Feel More"
         highlight="Frustrating Than Futuristic?"
       />

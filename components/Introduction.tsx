@@ -30,7 +30,7 @@ const Introduction = () => {
         <p className="section-subtitle">Introducing Prepwise</p>
         <SectionHeading
           as="h2"
-          className="mb-8 text-white"
+          className="max-w-3xl text-white"
           text="From PDF to Understanding"
           highlight="AI Teaching System"
         />
