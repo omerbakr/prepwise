@@ -103,3 +103,30 @@ export const STATS = [
     icon: "/icons/folder.svg",
   },
 ] as const;
+
+export const SUBSCRIPTION_PLANS = [
+  {
+    tier: "Basic",
+    price: "$9",
+    description:
+      "Start learning smarter with AI-powered PDF tutoring essentials.",
+    features: [
+      "Upload up to 10 PDFs per month",
+      "AI-generated summaries and explanations",
+      "Basic Q&A with your documents",
+      "Email support",
+    ],
+  },
+  {
+    tier: "Pro",
+    price: "$24",
+    description:
+      "Unlock the full Prepwise experience for serious learners and researchers.",
+    features: [
+      "Unlimited PDF uploads",
+      "Advanced 1:1 AI tutoring sessions",
+      "Personalized study plans and schedules",
+      "Priority support",
+    ],
+  },
+] as const;
