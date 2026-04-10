@@ -6,8 +6,8 @@ import Link from "next/link";
 import { NAV_LINKS } from "@/constants";
 import ActionButton from "@/components/ui/ActionButton";
 
-import MobileMenuButton from "./navbar/MobileMenuButton";
-import MobileMenu from "./navbar/MobileMenu";
+import MobileMenuButton from "@/components/navbar/MobileMenuButton";
+import MobileMenu from "@/components/navbar/MobileMenu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import ActionButton from "./ui/ActionButton";
-import SectionHeading from "./ui/SectionHeading";
-import Marquee from "./ui/Marquee";
-import BgLines from "./backgrounds/BgLines";
+import ActionButton from "@/components/ui/ActionButton";
+import SectionHeading from "@/components/ui/SectionHeading";
+import Marquee from "@/components/ui/Marquee";
+import BgLines from "@/components/backgrounds/BgLines";
 import { KEY_FEATURES, PROFILES } from "@/constants";
 
 const Introduction = () => {
