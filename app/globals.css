@@ -63,6 +63,10 @@ body {
     0px 10px 10px -3.75px rgba(0, 0, 0, 0.06);
 }
 
+@utility badge-inset {
+  @apply bg-gray-40 border-gray-20 w-fit rounded-lg border-[0.5px] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)];
+}
+
 @keyframes blink {
   0%,
   100% {

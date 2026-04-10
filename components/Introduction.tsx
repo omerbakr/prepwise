@@ -24,7 +24,7 @@ const Introduction = () => {
   ));
 
   return (
-    <section className="bg-[url(/images/introduction.avif)]">
+    <section className="bg-[url(/images/dark-bg.avif)]">
       <div className="wrapper relative flex flex-col items-center gap-8 py-24">
         <BgLines className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full opacity-60" />
         <p className="section-subtitle">Introducing Prepwise</p>
