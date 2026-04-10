@@ -1,11 +1,14 @@
 import Image from "next/image";
 
-import SectionHeading from "./ui/SectionHeading";
+import SectionHeading from "@/components/ui/SectionHeading";
 import { STATS } from "@/constants";
 
 const WhyUs = () => {
   return (
-    <section className="border-gray-10/30 border-b border-dashed bg-white">
+    <section
+      id="why-us"
+      className="border-gray-10/30 border-b border-dashed bg-white"
+    >
       <div className="wrapper flex flex-col items-center gap-4 px-12 py-24">
         <p className="section-subtitle">Why choose us?</p>
         <SectionHeading
