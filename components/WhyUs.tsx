@@ -9,7 +9,7 @@ const WhyUs = () => {
       id="why-us"
       className="border-gray-10/30 border-b border-dashed bg-white"
     >
-      <div className="wrapper flex flex-col items-center gap-4 px-12 py-24">
+      <div className="wrapper flex flex-col items-center gap-4 py-24">
         <p className="section-subtitle">Why choose us?</p>
         <SectionHeading
           as="h2"
