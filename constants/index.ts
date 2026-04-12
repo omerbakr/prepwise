@@ -143,6 +143,34 @@ export const TESTIMONIALS = [
   },
 ] as const;
 
+export const FAQS = [
+  {
+    question: "What is Prepwise?",
+    answer:
+      "Prepwise is an AI tutor that turns your PDFs into personalized study sessions, explanations, and Q&A — so you learn faster without rereading.",
+  },
+  {
+    question: "Which subjects does it support?",
+    answer:
+      "Any subject. Students use Prepwise for medicine, law, engineering, research papers, and everything in between.",
+  },
+  {
+    question: "Is there a free plan?",
+    answer:
+      "Yes. You can sign up for free and upload your first PDF in under a minute — no credit card required.",
+  },
+  {
+    question: "How is this different from ChatGPT?",
+    answer:
+      "Prepwise is built for learning from your own documents. It keeps context across your materials, cites the exact page, and builds a study plan around your deadlines.",
+  },
+  {
+    question: "Can I cancel anytime?",
+    answer:
+      "Absolutely. You can cancel your subscription at any time from your account settings — no questions asked.",
+  },
+] as const;
+
 export const SUBSCRIPTION_PLANS = [
   {
     tier: "Basic",
