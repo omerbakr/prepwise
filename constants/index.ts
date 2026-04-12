@@ -50,7 +50,7 @@ export const PROMPT_PHRASES = [
 export const PROFILES = [
   { role: "Medical Student", image: "/images/profile-1.avif" },
   { role: "Law Student", image: "/images/profile-2.avif" },
-  { role: "PhD Researcher", image: "/images/GvIIYiCvs1fSYrsqT9kkYqRv4Y.avif" },
+  { role: "PhD Researcher", image: "/images/profile-3.avif" },
 ] as const;
 
 export const KEY_FEATURES = [
@@ -101,6 +101,45 @@ export const STATS = [
     label: "Any Subject, Any Level",
     text: "From medicine to law to engineering, master any field straight from your notes.",
     icon: "/icons/folder.svg",
+  },
+] as const;
+
+export const TESTIMONIALS = [
+  {
+    name: "Sofia Martinez",
+    image: "/images/profile-1.avif",
+    role: "Engineering Student",
+    beforeText:
+      "My study sessions felt aimless—I'd open a lecture PDF and have no idea where to start.",
+    afterText:
+      "The personalized study plan keeps me on track and I walk into every exam knowing I covered what matters.",
+  },
+  {
+    name: "Amara Okafor",
+    image: "/images/profile-2.avif",
+    role: "Law Student",
+    beforeText:
+      "Case law PDFs were a nightmare—hundreds of pages and I never knew what was actually testable.",
+    afterText:
+      "Now I upload a ruling and get the key holdings, reasoning, and likely exam angles in minutes.",
+  },
+  {
+    name: "Daniel Chen",
+    image: "/images/profile-3.avif",
+    role: "PhD Researcher",
+    beforeText:
+      "I was drowning in research papers, juggling four AI tools just to understand a single methodology.",
+    afterText:
+      "One place, one PDF, one conversation—Prepwise explains dense papers clearly and cites the exact page.",
+  },
+  {
+    name: "Ruben Gouse",
+    image: "/images/profile-4.avif",
+    role: "Medical Student",
+    beforeText:
+      "I spent entire weekends rereading the same anatomy chapters and still froze up during exams.",
+    afterText:
+      "Prepwise turns my textbooks into quick Q&A sessions—I retain more in an hour than I used to in a day.",
   },
 ] as const;
 

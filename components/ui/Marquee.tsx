@@ -14,16 +14,17 @@ const Marquee = ({
   className,
 }: MarqueeProps) => {
   return (
-    <div className={cn("group overflow-hidden", className)}>
+    <div className={cn("w-dvw max-w-6xl overflow-hidden", className)}>
       <div
         className={cn(
           "flex gap-2 motion-reduce:animate-none",
-          direction === "left" ? "animate-scroll-x-reverse" : "animate-scroll-x",
+          direction === "left"
+            ? "animate-scroll-x-reverse"
+            : "animate-scroll-x",
         )}
       >
-        {children}
-
-        <div aria-hidden="true" className="flex gap-2">
+        <div className="flex shrink-0 gap-2">{children}</div>
+        <div className="flex shrink-0 gap-2" aria-hidden="true">
           {children}
         </div>
       </div>
