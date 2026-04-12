@@ -5,7 +5,10 @@ import { TESTIMONIALS } from "@/constants";
 
 const Testimonials = () => {
   return (
-    <section className="relative bg-white bg-[url(/images/grid-floor.svg)] bg-bottom bg-no-repeat pb-32 sm:bg-size-[100%_auto]">
+    <section
+      id="reviews"
+      className="relative bg-white bg-[url(/images/grid-floor.svg)] bg-bottom bg-no-repeat pb-32 sm:bg-size-[100%_auto]"
+    >
       <div className="via-75 white-gradient-to-bottom" />
 
       <div className="wrapper flex flex-col items-center gap-4 py-24">
