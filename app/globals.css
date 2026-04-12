@@ -5,6 +5,7 @@
   --foreground: #171717;
   --primary: #ff6f00;
   --gray-10: #bababa;
+  --gray-15: #767676;
   --gray-20: #202020;
   --gray-30: #1a1a1a;
   --gray-40: #151515;
@@ -15,6 +16,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-gray-10: var(--gray-10);
+  --color-gray-15: var(--gray-15);
   --color-gray-20: var(--gray-20);
   --color-gray-30: var(--gray-30);
   --color-gray-40: var(--gray-40);
@@ -63,6 +65,10 @@ body {
     0px 10px 10px -3.75px rgba(0, 0, 0, 0.06);
 }
 
+@utility white-gradient-to-bottom {
+  @apply pointer-events-none absolute inset-0 bg-linear-to-b from-transparent via-transparent to-white;
+}
+
 @utility badge-inset {
   @apply bg-gray-40 border-gray-20 w-fit rounded-lg border-[0.5px] px-4 py-2 shadow-[inset_0_4px_4px_rgba(255,255,255,0.05),inset_0_-4px_4px_rgba(255,255,255,0.03)];
 }
@@ -91,11 +97,11 @@ body {
 }
 
 .animate-scroll-x {
-  animation: scroll-x 30s linear infinite;
+  animation: scroll-x 60s linear infinite;
   width: max-content;
 }
 
 .animate-scroll-x-reverse {
-  animation: scroll-x 30s linear infinite reverse;
+  animation: scroll-x 60s linear infinite reverse;
   width: max-content;
 }
