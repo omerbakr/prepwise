@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Inter_Tight } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/providers/SmoothScroll";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { cn } from "@/lib/utils";
 
 const roboto = Roboto({
@@ -33,13 +30,7 @@ export default function RootLayout({
       lang="en"
       className={cn(roboto.variable, interTight.variable, "h-full antialiased")}
     >
-      <body>
-        <SmoothScroll>
-          <Navbar />
-          <main className="flex min-h-full flex-col">{children}</main>
-          <Footer />
-        </SmoothScroll>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
