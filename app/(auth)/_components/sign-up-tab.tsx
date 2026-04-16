@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { authClient } from "@/lib/auth-client";
-import { GoogleIcon } from "./oauth-icons";
+import { SocialOAuthButtons } from "./oauth-buttons";
 
 const signUpSchema = z.object({
   name: z.string().min(3, "Name must be at least 3 characters long"),
@@ -96,10 +96,7 @@ const SignUpTab = () => {
 
         <FieldSeparator>Or</FieldSeparator>
         <Field>
-          <Button variant="outline" type="button">
-            <GoogleIcon />
-            Continue with Google
-          </Button>
+          <SocialOAuthButtons />
         </Field>
       </FieldGroup>
     </form>
