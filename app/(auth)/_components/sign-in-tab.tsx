@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { authClient } from "@/lib/auth-client";
-import { GoogleIcon } from "./oauth-icons";
+import { SocialOAuthButtons } from "./oauth-buttons";
 
 const signInSchema = z.object({
   email: z.email("Invalid email address"),
@@ -93,10 +93,7 @@ const SignInTab = () => {
 
         <FieldSeparator>Or</FieldSeparator>
         <Field>
-          <Button variant="outline" type="button">
-            <GoogleIcon />
-            Continue with Google
-          </Button>
+          <SocialOAuthButtons />
         </Field>
       </FieldGroup>
     </form>
