@@ -1,10 +1,10 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 import { TARGET_DATE } from "@/constants";
 
-type ClassValue = string | false | null | undefined;
-
-export const cn = (...classes: ClassValue[]) => {
-  return classes.filter(Boolean).join(" ");
-};
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export const getTimeLeft = () => {
   const diff = TARGET_DATE.getTime() - Date.now();

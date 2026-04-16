@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
 
 const roboto = Roboto({
   weight: ["400", "500", "600", "700"],
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={cn(roboto.variable, interTight.variable, "h-full antialiased")}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
