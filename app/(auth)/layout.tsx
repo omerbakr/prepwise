@@ -1,4 +1,8 @@
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 import Link from "next/link";
+
+import { auth } from "@/lib/auth";
 import { FieldDescription } from "@/components/ui/field";
 
 export default async function AuthLayout({
@@ -6,6 +10,9 @@ export default async function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const session = await auth.api.getSession({ headers: await headers() });
+  if (session) redirect("/dashboard");
+
   return (
     <section className="col-center h-screen gap-6 p-6 md:p-10">
       <div className="flex w-full max-w-sm flex-col gap-6">
