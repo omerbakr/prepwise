@@ -41,11 +41,12 @@ const SignUpTab = () => {
 
   const handleSignUp = async (data: SignUpForm) => {
     await authClient.signUp.email(
-      { ...data },
+      { ...data, callbackURL: "/dashboard" },
       {
         onSuccess: () => {
-          router.push("/dashboard");
-          toast.success("Sign up successful");
+          router.push(
+            `/verify-email?email=${encodeURIComponent(data.email)}`,
+          );
         },
         onError: (error) => {
           toast.error(error.error.message || "Failed to sign up");
